@@ -28,7 +28,8 @@
 * "speak as cat" separate from "is a cat" (federates with firefish)
 * it's always clear if a note has a poll (misskey sometimes hides
   that)
-* only 1 boost per note per user is allowed
+* boosts and quote-boost are accounted separately
+* only 1 boost plus 1 quote-boost per note per user is allowed
 * admins can refresh remote user details
 * better compatibility with relays
 * buttons to show/hide all notes with CWs in a conversation
