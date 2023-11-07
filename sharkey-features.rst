@@ -6,8 +6,7 @@
 * mastodon-compatible api, including OAuth2
 * "signups require approval" mode
 * admins can silence users, can mark all their media as NSFW
-* all data related to a user can be exported, so admins can comply
-  with GDPR-style Data Subject Access Requests
+* implements GDPR-style Data Subject Access Requests (users can export all data related to them)
   
 * option to open note detailed view by clicking on the note (most
   useful on mobile)
