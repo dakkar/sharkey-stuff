@@ -42,6 +42,7 @@ UI/UX
 * pop-up user profiles show if follow requests to the user require
   approval
 * MFM cheatsheet when composing notes
+* emoji auto-complete is case-insensitive
 * it's always clear if a note has a poll (misskey sometimes hides
   that)
 * boosts and quote-boost are accounted separately
