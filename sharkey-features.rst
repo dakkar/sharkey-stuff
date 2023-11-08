@@ -53,6 +53,7 @@ UI/UX
 * when searching, users can restrict results to notes with attachments
 * CSS class names are human-readable, to simplify browser-side
   customisation
+* users can disable indexing of their notes (the setting is federated)
 
 Ones of interest to admins
 """"""""""""""""""""""""""
