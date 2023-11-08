@@ -1,0 +1,5 @@
+#!/bin/bash
+
+last_commit_checked=79ca5b0d9e55e18a929ecadb9fe6c4cbf37c06da
+
+exec git cmplog sk-develop ^mk-develop ^"${last_commit_checked}"
