@@ -10,6 +10,10 @@ Big ones
 * fully federated note editing, you can also see previous versions of
   edited notes
 * Mastodon-compatible API, including OAuth2
+* can import your exported posts from Mastodon and most of its forks,
+  Pleroma / Akkoma, Misskey / Firefish and forks, Twitter, Instagram,
+  including attachments (threading may not work perfectly, and other
+  people's replies to your posts may not get imported)
 * admins can require approval for new users' signups
 * admins can silence users
 * admins can mark all of a user's media as NSFW
@@ -55,6 +59,8 @@ UI/UX
 * CSS class names are human-readable, to simplify browser-side
   customisation
 * users can disable indexing of their notes (the setting is federated)
+* "likes" and "reactions" federate correctly to Mastodon / Pleroma /
+  Akkoma (Misskey sends them all as reactions)
 
 Ones of interest to admins
 """"""""""""""""""""""""""
@@ -68,3 +74,4 @@ Ones of interest to admins
 * admins can delete remote emojis
 * admins can disable achievements
 * admins can refresh remote user details
+* admins can set a default emoji for likes/reactions
