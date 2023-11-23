@@ -12,8 +12,8 @@ Big ones
 * Mastodon-compatible API, including OAuth2
 * can import your exported posts from Mastodon and most of its forks,
   Pleroma / Akkoma, Misskey / Firefish and forks, Twitter, Instagram,
-  including attachments (threading may not work perfectly, and other
-  people's replies to your posts may not get imported)
+  Facebook, including attachments (threading may not work perfectly,
+  and other people's replies to your posts may not get imported)
 * admins can require approval for new users' signups
 * admins can silence users
 * admins can mark all of a user's media as NSFW
@@ -61,6 +61,13 @@ UI/UX
 * users can disable indexing of their notes (the setting is federated)
 * "likes" and "reactions" federate correctly to Mastodon / Pleroma /
   Akkoma (Misskey sends them all as reactions)
+* different error icons
+* users can disable the "disconnected" warning (connection is usually
+  re-established automatically, so the warning is rarely useful)
+* users can set a default emoji for their likes/reactions
+* when the instance is using meilisearch to index notes, Sharkey will
+  use it in more cases (e.g. when limiting results to notes containing
+  images)
 
 Ones of interest to admins
 """"""""""""""""""""""""""
