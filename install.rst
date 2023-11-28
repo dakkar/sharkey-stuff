@@ -12,8 +12,36 @@ Before you start, you really need:
 With Docker
 -----------
 
-Don't know, probably
-https://github.com/transfem-org/Sharkey/pkgs/container/sharkey
+Prerequisites:
+
+* Docker
+* Compose Plugin
+
+Create multiple directories::
+
+  mkdir Sharkey && mkdir Sharkey/.config
+
+Fetch all required examples and enter directory::
+
+  wget -O Sharkey/docker-compose.yml https://raw.githubusercontent.com/transfem-org/Sharkey/stable/docker-compose.yml.example
+  wget -O Sharkey/.config/default.yml https://raw.githubusercontent.com/transfem-org/Sharkey/stable/.config/example.yml
+  wget -O Sharkey/.config/docker.env https://github.com/transfem-org/Sharkey/blob/stable/.config/docker_example.env
+  cd Sharkey
+
+Edit ``.config/default.yml``, there are comments explaining what each
+option means. In particular, we're going to assume you have (replaced ``{YOUR DOMAIN NAME}`` with the domain name we talked about at the
+start)::
+
+  url: https://{YOUR DOMAIN NAME}/
+
+Edit ``docker-compose.yml``, there are multiple comments if note search is wanted uncomment all of meilisearch otherwise proceed to do the following changes::
+
+  remove "build: ." in the web section
+  uncomment image in the web section
+
+Starting::
+
+  docker compose up -d
 
 Manually
 --------
