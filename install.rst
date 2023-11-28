@@ -25,7 +25,7 @@ Fetch all required examples and enter directory::
 
   wget -O Sharkey/docker-compose.yml https://raw.githubusercontent.com/transfem-org/Sharkey/stable/docker-compose.yml.example
   wget -O Sharkey/.config/default.yml https://raw.githubusercontent.com/transfem-org/Sharkey/stable/.config/example.yml
-  wget -O Sharkey/.config/docker.env https://github.com/transfem-org/Sharkey/blob/stable/.config/docker_example.env
+  wget -O Sharkey/.config/docker.env https://raw.githubusercontent.com/transfem-org/Sharkey/stable/.config/docker_example.env
   cd Sharkey
 
 Edit ``.config/default.yml``, there are comments explaining what each
