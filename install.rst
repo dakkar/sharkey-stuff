@@ -29,15 +29,20 @@ Fetch all required examples and enter directory::
   cd Sharkey
 
 Edit ``.config/default.yml``, there are comments explaining what each
-option means. In particular, we're going to assume you have (replaced ``{YOUR DOMAIN NAME}`` with the domain name we talked about at the
-start)::
+option means. In particular, we're going to assume you have::
 
   url: https://{YOUR DOMAIN NAME}/
 
-Edit ``docker-compose.yml``, there are multiple comments if note search is wanted uncomment all of meilisearch otherwise proceed to do the following changes::
+(replace ``{YOUR DOMAIN NAME}`` with the domain name we talked about
+at the start).
 
-  remove "build: ." in the web section
-  uncomment image in the web section
+Edit ``docker-compose.yml``, there are multiple comments there as
+well. If you want to set up note search with meilisearch, uncomment
+all of meilisearch options, otherwise proceed to do the following
+changes in the ``services:`` / ``web:`` section:
+
+* uncomment the line that starts with ``image:``
+* remove the line ``build: .``
 
 Starting::
 
@@ -76,10 +81,7 @@ start a shell as that user::
   cp .config/example.yml .config/default.yml
 
 Edit ``.config/default.yml``, there are comments explaining what each
-option means. In particular, we're going to assume you have (replace
-``{YOUR PASSWORD}`` with an actual password you make up for this, and
-``{YOUR DOMAIN NAME}`` with the domain name we talked about at the
-start)::
+option means. In particular, we're going to assume you have::
 
   url: https://{YOUR DOMAIN NAME}/
   db:
@@ -88,6 +90,10 @@ start)::
     db: sharkey
     user: sharkey
     pass: {YOUR PASSWORD}
+
+(replace ``{YOUR PASSWORD}`` with an actual password you make up for
+this, and ``{YOUR DOMAIN NAME}`` with the domain name we talked about
+at the start)
 
 Building::
 
@@ -101,6 +107,8 @@ and ``createdb`` or with ``sudo -u postgres psql`` and then::
   grant all privileges on database sharkey to sharkey;
   alter database sharkey owner to sharkey;
   \q
+
+(replace ``{YOUR PASSWORD}`` with the same password as before)
 
 Then create the schema::
 
