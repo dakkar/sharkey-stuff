@@ -1,11 +1,8 @@
-Sharkey vs Misskey
-==================
+# Sharkey vs Misskey
 
-A (probably comprehensive) list of differences
-----------------------------------------------
+## A (probably comprehensive) list of differences
 
-Big ones
-""""""""
+### Big ones
 
 * fully federated note editing, you can also see previous versions of
   edited notes
@@ -20,8 +17,7 @@ Big ones
 * GDPR-style Data Subject Access Requests (users can export all data
   related to themselves)
 
-Fun ones
-""""""""
+### Fun ones
 
 * can play module / tracker music files
 * (federated) listenbrainz integration
@@ -29,8 +25,7 @@ Fun ones
 * "speak as cat" separate from "is a cat" (both setting are federated
   with compatible software)
 
-UI/UX
-"""""
+### UI/UX
   
 * option to open a note's detailed view by clicking on the note (most
   useful on mobile)
@@ -69,8 +64,7 @@ UI/UX
   use it in more cases (e.g. when limiting results to notes containing
   images)
 
-Ones of interest to admins
-""""""""""""""""""""""""""
+### Ones of interest to admins
 
 * quote-boosts federate correctly from/to Mastodon forks
 * better compatibility with relays
