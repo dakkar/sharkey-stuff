@@ -39,7 +39,8 @@
 * animated MFM can be enabled/disabled on each note
 * supports longer alt text
 * pop-up user profiles show if follow requests to the user require
-  approval
+  approval, have a "open remote profile" option, and show custom
+  fields (e.g. the user's website address)
 * MFM cheatsheet when composing notes
 * emoji auto-complete is case-insensitive
 * it's always clear if a note has a poll (misskey sometimes hides
@@ -63,6 +64,7 @@
 * when the instance is using meilisearch to index notes, Sharkey will
   use it in more cases (e.g. when limiting results to notes containing
   images)
+* when showing a reply containing many mentions, they are shortened
 
 ### Ones of interest to admins
 
@@ -76,3 +78,4 @@
 * admins can disable achievements
 * admins can refresh remote user details
 * admins can set a default emoji for likes/reactions
+* the PWA icon matches the instance icon

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-last_commit_checked=42bf8e5e76fb6a6dce804c1784e1e2833268c1e6
+last_commit_checked=7e2cf4238f911e8630e93699912c0d4e45a8bcad
 
 exec git cmplog sharkey/develop ^misskey/develop ^"${last_commit_checked}"
