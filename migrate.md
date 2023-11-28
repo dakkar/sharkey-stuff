@@ -1,4 +1,4 @@
-#Migrate to Sharkey
+# Migrate to Sharkey
 
 ## From Misskey
 
